@@ -49,5 +49,7 @@ If you'd like to build the app locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/abhijeet030/GitPeek.git
+   git clone https://github.com/abhijeet030/GitPeek-SwiftUI.git
    cd gitpeek
+   pod install
+   open *xcworkspace
