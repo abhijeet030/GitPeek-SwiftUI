@@ -1,0 +1,48 @@
+# Xcode
+#
+build/
+DerivedData/
+.build/
+.swiftpm/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+*.xcworkspace
+
+# CocoaPods
+#
+Pods/
+Podfile.lock
+project.xcworkspace
+
+# Archives
+#
+*.xcarchive
+
+# Provisioning profiles
+#
+*.mobileprovision
+
+# App packages
+#
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SwiftUI previews
+.swiftUIPreview/
+
+# User-specific files
+#
+*.moved-aside
+*.xcuserstate
+*.idea/
+*.DS_Store
+

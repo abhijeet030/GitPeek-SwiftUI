@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		458B84E6796F959BC439E142 /* Pods_GitPeek_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78C941D75709793F2E8B3E6 /* Pods_GitPeek_SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		82A79B872E2A6EDD000DA932 /* GitPeek-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitPeek-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A433768DB32F4446EF72BC6A /* Pods-GitPeek-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitPeek-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-GitPeek-SwiftUI/Pods-GitPeek-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		D18956C6978CDBAB22952FD4 /* Pods-GitPeek-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitPeek-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-GitPeek-SwiftUI/Pods-GitPeek-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		F78C941D75709793F2E8B3E6 /* Pods_GitPeek_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitPeek_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,17 +30,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458B84E6796F959BC439E142 /* Pods_GitPeek_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DBB6E91CAA0BBFF02CEA829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A433768DB32F4446EF72BC6A /* Pods-GitPeek-SwiftUI.debug.xcconfig */,
+				D18956C6978CDBAB22952FD4 /* Pods-GitPeek-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		82A79B7E2E2A6EDD000DA932 = {
 			isa = PBXGroup;
 			children = (
 				82A79B892E2A6EDD000DA932 /* GitPeek-SwiftUI */,
 				82A79B882E2A6EDD000DA932 /* Products */,
+				3DBB6E91CAA0BBFF02CEA829 /* Pods */,
+				A499F3187A1A10BF7F62ABA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +64,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A499F3187A1A10BF7F62ABA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78C941D75709793F2E8B3E6 /* Pods_GitPeek_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +79,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A79B972E2A6EE0000DA932 /* Build configuration list for PBXNativeTarget "GitPeek-SwiftUI" */;
 			buildPhases = (
+				6D53637B2379AE9AE87AE560 /* [CP] Check Pods Manifest.lock */,
 				82A79B832E2A6EDD000DA932 /* Sources */,
 				82A79B842E2A6EDD000DA932 /* Frameworks */,
 				82A79B852E2A6EDD000DA932 /* Resources */,
+				3504F9F19435FF64403DAC56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +93,6 @@
 				82A79B892E2A6EDD000DA932 /* GitPeek-SwiftUI */,
 			);
 			name = "GitPeek-SwiftUI";
-			packageProductDependencies = (
-			);
 			productName = "GitPeek-SwiftUI";
 			productReference = 82A79B872E2A6EDD000DA932 /* GitPeek-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +140,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3504F9F19435FF64403DAC56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitPeek-SwiftUI/Pods-GitPeek-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitPeek-SwiftUI/Pods-GitPeek-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitPeek-SwiftUI/Pods-GitPeek-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D53637B2379AE9AE87AE560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitPeek-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82A79B832E2A6EDD000DA932 /* Sources */ = {
@@ -246,12 +319,14 @@
 		};
 		82A79B982E2A6EE0000DA932 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A433768DB32F4446EF72BC6A /* Pods-GitPeek-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -273,12 +348,14 @@
 		};
 		82A79B992E2A6EE0000DA932 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18956C6978CDBAB22952FD4 /* Pods-GitPeek-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
