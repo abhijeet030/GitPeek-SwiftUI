@@ -1,4 +1,4 @@
-# GitPeek-SwiftUI. (Native iOS - SwiftUI)
+# GitPeek-SwiftUI (Native iOS - SwiftUI)
 
 GitPeek is a sleek and intuitive iOS application that allows users to search and explore GitHub profiles with ease. Whether you're browsing for inspiration or keeping tabs on your favorite developers, GitPeek offers a fast and feature-rich experience — complete with offline support and system-integrated theming.
 
@@ -49,5 +49,7 @@ If you'd like to build the app locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/abhijeet030/GitPeek.git
+   git clone https://github.com/abhijeet030/GitPeek-SwiftUI.git
    cd gitpeek
+   pod install
+   open *xcworkspace
